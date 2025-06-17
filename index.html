@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My IP Camera</title>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+      }
+      #camera {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="camera" src="http://192.168.31.65:8080/video" alt="IP Camera Stream" />
+  </body>
+</html>
